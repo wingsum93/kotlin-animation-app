@@ -32,7 +32,7 @@ class AnimationView(
         context: Context, attributeSet: AttributeSet
 ) : View(context, attributeSet), Observer<Set<AnimatedShape>> {
     private var shapes = NO_SHAPES
-    private val paint = Paint()
+    private val paint = Paint()//draw pen?
     private val rect = RectF()
 
     override fun onChanged(shapes: Set<AnimatedShape>?) {
